@@ -1,11 +1,12 @@
 <template>
     <div>
       <ul>
+        <!-- Boucle sur les personnages -->
         <li
-          style="list-style-type: none; margin: 0.5rem 0;"
           v-for="character in characters"
           :key="character.name"
         >
+        <!-- Naviguer vers la page du personnage -->
           <router-link
             :to="{ name: 'Character', params: { id: character.url.split('/')[5] } }"
           >{{ character.name }}</router-link>
@@ -17,7 +18,7 @@
   <script>
   export default {
     name: 'People',
-    props: ['characters'],
+    props: ['characters'], // Propriété pour recevoir la liste des personnages
   };
   </script>
   

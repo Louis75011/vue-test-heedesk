@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
     </div>
+    <!-- Layout/Outlet -->
     <router-view/>
   </div>
 </template>
@@ -43,6 +44,7 @@ input {
 
 li {
   list-style-type: none;
+  margin: 0.5rem 0;
 }
 
 button {
@@ -51,5 +53,4 @@ button {
   background-color: lightgray;
   margin-bottom: 2rem;
 }
-
 </style>
